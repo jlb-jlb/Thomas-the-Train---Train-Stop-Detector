@@ -1,5 +1,3 @@
-# STUDENT: Joscha Lasse Bisping - 401424
-
 # 1. THE PROBLEM
 
 In this Challenge, the goal is to detect every station stop of a commuter-train ride in Berlin using only permission-free phone sensors (magnetometer, accelerometer, gravity, gyroscope). For each ride the solution must output a list of time-intervals e.g. `[(start s, end s), ...]` during which the train is **not moving**. No GPS, timetable or line map is available, the algorithm has to infer stops from raw motion and magnetic signatures alone. The files do contain positional information about the specific train line and the stops. However, they are not given during inference so not necessarily feasable to use. 
