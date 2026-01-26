@@ -1,0 +1,198 @@
+# Experiment 14
+
+## Metrics
+- F1 Score: 0.835
+- Precision: 0.760
+- Recall: 0.926
+- Accuracy: 0.931
+
+## Model Path
+- Model Path: saved_models/train_stop_detector_val_10.joblib
+
+- Full Model Path: saved_models/train_stop_detector_final_4.joblib
+
+## Confusion Matrix
+![Confusion Matrix](img/confusion_matrix_14.png)
+
+## Additional Information
+- feat_cfg: {'lag_steps': [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20], 'add_diff': True, 'diff_steps': (1,), 'add_extra': False, 'window_len': '1s'}
+- hgb_params: {'max_depth': 10, 'learning_rate': 0.15, 'class_weight': 'balanced', 'early_stopping': True, 'random_state': 42}
+- postproc: {'thr': 0.5, 'min_stop': 3, 'merge_gap': 2, 'med_k': 5, 'win_len': 1.0}
+- val_f1: 0.835
+## Features
+- 0 Feature: dyn_acc_mean
+- 1 Feature: dyn_acc_std
+- 2 Feature: dyn_acc_max
+- 3 Feature: dyn_acc_median
+- 4 Feature: gyro_mag_mean
+- 5 Feature: gyro_mag_std
+- 6 Feature: gyro_mag_max
+- 7 Feature: mag_mag_std
+- 8 Feature: dyn_acc_mean_lag1
+- 9 Feature: dyn_acc_std_lag1
+- 10 Feature: dyn_acc_max_lag1
+- 11 Feature: dyn_acc_median_lag1
+- 12 Feature: gyro_mag_mean_lag1
+- 13 Feature: gyro_mag_std_lag1
+- 14 Feature: gyro_mag_max_lag1
+- 15 Feature: mag_mag_std_lag1
+- 16 Feature: dyn_acc_mean_lag2
+- 17 Feature: dyn_acc_std_lag2
+- 18 Feature: dyn_acc_max_lag2
+- 19 Feature: dyn_acc_median_lag2
+- 20 Feature: gyro_mag_mean_lag2
+- 21 Feature: gyro_mag_std_lag2
+- 22 Feature: gyro_mag_max_lag2
+- 23 Feature: mag_mag_std_lag2
+- 24 Feature: dyn_acc_mean_lag3
+- 25 Feature: dyn_acc_std_lag3
+- 26 Feature: dyn_acc_max_lag3
+- 27 Feature: dyn_acc_median_lag3
+- 28 Feature: gyro_mag_mean_lag3
+- 29 Feature: gyro_mag_std_lag3
+- 30 Feature: gyro_mag_max_lag3
+- 31 Feature: mag_mag_std_lag3
+- 32 Feature: dyn_acc_mean_lag4
+- 33 Feature: dyn_acc_std_lag4
+- 34 Feature: dyn_acc_max_lag4
+- 35 Feature: dyn_acc_median_lag4
+- 36 Feature: gyro_mag_mean_lag4
+- 37 Feature: gyro_mag_std_lag4
+- 38 Feature: gyro_mag_max_lag4
+- 39 Feature: mag_mag_std_lag4
+- 40 Feature: dyn_acc_mean_lag5
+- 41 Feature: dyn_acc_std_lag5
+- 42 Feature: dyn_acc_max_lag5
+- 43 Feature: dyn_acc_median_lag5
+- 44 Feature: gyro_mag_mean_lag5
+- 45 Feature: gyro_mag_std_lag5
+- 46 Feature: gyro_mag_max_lag5
+- 47 Feature: mag_mag_std_lag5
+- 48 Feature: dyn_acc_mean_lag6
+- 49 Feature: dyn_acc_std_lag6
+- 50 Feature: dyn_acc_max_lag6
+- 51 Feature: dyn_acc_median_lag6
+- 52 Feature: gyro_mag_mean_lag6
+- 53 Feature: gyro_mag_std_lag6
+- 54 Feature: gyro_mag_max_lag6
+- 55 Feature: mag_mag_std_lag6
+- 56 Feature: dyn_acc_mean_lag7
+- 57 Feature: dyn_acc_std_lag7
+- 58 Feature: dyn_acc_max_lag7
+- 59 Feature: dyn_acc_median_lag7
+- 60 Feature: gyro_mag_mean_lag7
+- 61 Feature: gyro_mag_std_lag7
+- 62 Feature: gyro_mag_max_lag7
+- 63 Feature: mag_mag_std_lag7
+- 64 Feature: dyn_acc_mean_lag8
+- 65 Feature: dyn_acc_std_lag8
+- 66 Feature: dyn_acc_max_lag8
+- 67 Feature: dyn_acc_median_lag8
+- 68 Feature: gyro_mag_mean_lag8
+- 69 Feature: gyro_mag_std_lag8
+- 70 Feature: gyro_mag_max_lag8
+- 71 Feature: mag_mag_std_lag8
+- 72 Feature: dyn_acc_mean_lag9
+- 73 Feature: dyn_acc_std_lag9
+- 74 Feature: dyn_acc_max_lag9
+- 75 Feature: dyn_acc_median_lag9
+- 76 Feature: gyro_mag_mean_lag9
+- 77 Feature: gyro_mag_std_lag9
+- 78 Feature: gyro_mag_max_lag9
+- 79 Feature: mag_mag_std_lag9
+- 80 Feature: dyn_acc_mean_lag10
+- 81 Feature: dyn_acc_std_lag10
+- 82 Feature: dyn_acc_max_lag10
+- 83 Feature: dyn_acc_median_lag10
+- 84 Feature: gyro_mag_mean_lag10
+- 85 Feature: gyro_mag_std_lag10
+- 86 Feature: gyro_mag_max_lag10
+- 87 Feature: mag_mag_std_lag10
+- 88 Feature: dyn_acc_mean_lag11
+- 89 Feature: dyn_acc_std_lag11
+- 90 Feature: dyn_acc_max_lag11
+- 91 Feature: dyn_acc_median_lag11
+- 92 Feature: gyro_mag_mean_lag11
+- 93 Feature: gyro_mag_std_lag11
+- 94 Feature: gyro_mag_max_lag11
+- 95 Feature: mag_mag_std_lag11
+- 96 Feature: dyn_acc_mean_lag12
+- 97 Feature: dyn_acc_std_lag12
+- 98 Feature: dyn_acc_max_lag12
+- 99 Feature: dyn_acc_median_lag12
+- 100 Feature: gyro_mag_mean_lag12
+- 101 Feature: gyro_mag_std_lag12
+- 102 Feature: gyro_mag_max_lag12
+- 103 Feature: mag_mag_std_lag12
+- 104 Feature: dyn_acc_mean_lag13
+- 105 Feature: dyn_acc_std_lag13
+- 106 Feature: dyn_acc_max_lag13
+- 107 Feature: dyn_acc_median_lag13
+- 108 Feature: gyro_mag_mean_lag13
+- 109 Feature: gyro_mag_std_lag13
+- 110 Feature: gyro_mag_max_lag13
+- 111 Feature: mag_mag_std_lag13
+- 112 Feature: dyn_acc_mean_lag14
+- 113 Feature: dyn_acc_std_lag14
+- 114 Feature: dyn_acc_max_lag14
+- 115 Feature: dyn_acc_median_lag14
+- 116 Feature: gyro_mag_mean_lag14
+- 117 Feature: gyro_mag_std_lag14
+- 118 Feature: gyro_mag_max_lag14
+- 119 Feature: mag_mag_std_lag14
+- 120 Feature: dyn_acc_mean_lag15
+- 121 Feature: dyn_acc_std_lag15
+- 122 Feature: dyn_acc_max_lag15
+- 123 Feature: dyn_acc_median_lag15
+- 124 Feature: gyro_mag_mean_lag15
+- 125 Feature: gyro_mag_std_lag15
+- 126 Feature: gyro_mag_max_lag15
+- 127 Feature: mag_mag_std_lag15
+- 128 Feature: dyn_acc_mean_lag16
+- 129 Feature: dyn_acc_std_lag16
+- 130 Feature: dyn_acc_max_lag16
+- 131 Feature: dyn_acc_median_lag16
+- 132 Feature: gyro_mag_mean_lag16
+- 133 Feature: gyro_mag_std_lag16
+- 134 Feature: gyro_mag_max_lag16
+- 135 Feature: mag_mag_std_lag16
+- 136 Feature: dyn_acc_mean_lag17
+- 137 Feature: dyn_acc_std_lag17
+- 138 Feature: dyn_acc_max_lag17
+- 139 Feature: dyn_acc_median_lag17
+- 140 Feature: gyro_mag_mean_lag17
+- 141 Feature: gyro_mag_std_lag17
+- 142 Feature: gyro_mag_max_lag17
+- 143 Feature: mag_mag_std_lag17
+- 144 Feature: dyn_acc_mean_lag18
+- 145 Feature: dyn_acc_std_lag18
+- 146 Feature: dyn_acc_max_lag18
+- 147 Feature: dyn_acc_median_lag18
+- 148 Feature: gyro_mag_mean_lag18
+- 149 Feature: gyro_mag_std_lag18
+- 150 Feature: gyro_mag_max_lag18
+- 151 Feature: mag_mag_std_lag18
+- 152 Feature: dyn_acc_mean_lag19
+- 153 Feature: dyn_acc_std_lag19
+- 154 Feature: dyn_acc_max_lag19
+- 155 Feature: dyn_acc_median_lag19
+- 156 Feature: gyro_mag_mean_lag19
+- 157 Feature: gyro_mag_std_lag19
+- 158 Feature: gyro_mag_max_lag19
+- 159 Feature: mag_mag_std_lag19
+- 160 Feature: dyn_acc_mean_lag20
+- 161 Feature: dyn_acc_std_lag20
+- 162 Feature: dyn_acc_max_lag20
+- 163 Feature: dyn_acc_median_lag20
+- 164 Feature: gyro_mag_mean_lag20
+- 165 Feature: gyro_mag_std_lag20
+- 166 Feature: gyro_mag_max_lag20
+- 167 Feature: mag_mag_std_lag20
+- 168 Feature: dyn_acc_mean_diff1
+- 169 Feature: dyn_acc_std_diff1
+- 170 Feature: dyn_acc_max_diff1
+- 171 Feature: dyn_acc_median_diff1
+- 172 Feature: gyro_mag_mean_diff1
+- 173 Feature: gyro_mag_std_diff1
+- 174 Feature: gyro_mag_max_diff1
+- 175 Feature: mag_mag_std_diff1
