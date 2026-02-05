@@ -36,11 +36,11 @@ Angular velocity of the handset around x/y/z axes.
 ### 2.2 Feature Engineering
 Instead of the twelve raw `x/y/z` channels, I condensed them to three magnitudes that are more stable across phone orientations (Or at least that was the idea).
 
-$$\text{dyn'_'acc} = ||\text{accelerometer} - \text{gravity}||$$
+$$\text{dyn_acc} = ||\text{accelerometer} - \text{gravity}||$$
 
-$$\text{gyro'_'mag} = ||\text{gyroscope}||$$
+$$\text{gyro_mag} = ||\text{gyroscope}||$$
 
-$$\text{mag'_'mag} = ||\text{magnetometer}||$$
+$$\text{mag_mag} = ||\text{magnetometer}||$$
 
 
 ```python
